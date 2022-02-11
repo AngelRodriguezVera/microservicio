@@ -1,0 +1,16 @@
+management.endpoints.web.exposure.include: "*"
+server.port: "9080"
+spring.profiles.active: prd
+server:
+  servlet:
+    context-path: /demoSwagger
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/test
+    username: root
+    password: root
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console.enabled: true
